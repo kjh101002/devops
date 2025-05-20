@@ -12,5 +12,14 @@ public class StudentManager {
             throw new IllegalArgumentException("이미 존재하는 학생입니다: " + name);
         }
         students.add(name);
+       
+    }
+    
+  //학생 제거
+    public void removeStudent(String name) {
+        if (!students.contains(name)) {
+            throw new IllegalArgumentException("존재하지 않는 학생입니다: " + name);
+        }
+        students.remove(name);
     }
 }
