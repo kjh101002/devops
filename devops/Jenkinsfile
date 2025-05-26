@@ -70,8 +70,8 @@ pipeline {
         success {
             echo "Build and test succeeded!"
             emailext(
-                subject: '$DEFAULT_SUBJECT',
-                body: '$DEFAULT_CONTENT',
+                subject: 'Build and test succeeded',
+                body: 'test',
                 to: 'kjh01791@gmail.com'
             )
         }
