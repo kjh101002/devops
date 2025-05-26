@@ -78,8 +78,7 @@ pipeline {
                 ''',
                 mimeType: 'text/html',
                 to: 'kjh01791@gmail.com',
-                replyTo: 'kjh01791@gmail.com',
-                from: 'kjh01791@gmail.com'
+                from: 'xhdtlsid2@gmail.com'
             )
         }
     }
