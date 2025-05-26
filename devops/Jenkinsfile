@@ -70,8 +70,13 @@ pipeline {
         success {
             echo "Build and test succeeded!"
             emailext(
-                subject: 'Build and test succeeded',
-                body: 'test',
+                subject: '✅ Jenkins Build Success',
+                body: '''\
+                    <p>Good news!</p>
+                    <p>The Jenkins pipeline build and test have <strong>succeeded</strong>.</p>
+                    <p>Check Jenkins for details.</p>
+                ''',
+                mimeType: 'text/html',
                 to: 'kjh01791@gmail.com'
             )
         }
