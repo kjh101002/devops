@@ -69,7 +69,7 @@ pipeline {
 
         success {
             echo "Build and test succeeded!"
-            emailtext to: 'kjh01791@gmail.com'
+            emailext to: 'kjh01791@gmail.com'
         }
     }
 }
