@@ -77,7 +77,7 @@ pipeline {
                     <p>Check Jenkins for details.</p>
                 ''',
                 mimeType: 'text/html',
-                to: 'kjh01791@gmail.com'
+                to: 'kjh01791@gmail.com',
                 replyTo: 'kjh01791@gmail.com',
                 from: 'kjh01791@gmail.com'
             )
